@@ -69,6 +69,8 @@ if args.verbose:
     logging.basicConfig(level=logging.INFO)
 
 conf = rtde_config.ConfigFile(args.config)
+
+
 output_names, output_types = conf.get_recipe("out")
 
 con = rtde.RTDE(args.host, args.port)
