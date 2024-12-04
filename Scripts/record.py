@@ -68,6 +68,14 @@ args = parser.parse_args()
 if args.verbose:
     logging.basicConfig(level=logging.INFO)
 
+import os
+
+if os.path.exists(args.config):
+    print(f"Error: Configuration file '{args.config}' not found.")
+    sys.exit(1)
+
+
+
 conf = rtde_config.ConfigFile(args.config)
 
 
