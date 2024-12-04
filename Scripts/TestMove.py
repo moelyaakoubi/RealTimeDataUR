@@ -2,7 +2,7 @@ import socket
 import time
 
 # Robot IP address and port
-ROBOT_IP = '192.168.0.1'  # Replace with your robot’s IP address
+ROBOT_IP = '127.0.0.1'  # Replace with your robot’s IP address
 PORT = 30002              # Port for primary interface
 
 # Define three points with six joint angles each (in radians)
