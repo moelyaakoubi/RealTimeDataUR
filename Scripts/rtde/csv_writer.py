@@ -51,9 +51,11 @@ class CSVWriter(object):
         self.__writer = csv.writer(csvfile, delimiter=delimiter)
 
     def writeheader(self):
+        """Writes the header row to the CSV file."""
         self.__writer.writerow(self.__header_names)
 
     def writerow(self, data_object):
+        """Writes a data row to the CSV file."""
         data = []
         for i in range(len(self.__names)):
             size = serialize.get_item_size(self.__types[i])
