@@ -99,7 +99,7 @@ if not con.send_start():
     sys.exit()
 
 writeModes = "wb" if args.binary else "w"
-with open(args.output, writeModes) as csvfile:
+with open(args.output, writeModes,newline='') as csvfile:
     writer = None
 
     if args.binary:
