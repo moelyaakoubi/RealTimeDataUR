@@ -35,7 +35,7 @@ import rtde.csv_binary_writer as csv_binary_writer
 # parameters
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--host", default="localhost", help="name of host to connect to (localhost)"
+    "--host", default="192.168.56.101", help="name of host to connect to (localhost)"
 )
 parser.add_argument("--port", type=int, default=30004, help="port number (30004)")
 parser.add_argument(
