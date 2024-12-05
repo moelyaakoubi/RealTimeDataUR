@@ -31,7 +31,7 @@ from rtde import serialize
 
 
 class CSVWriter(object):
-    def __init__(self, csvfile, names, types, delimiter=" "):
+    def __init__(self, csvfile, names, types, delimiter=","):
         if len(names) != len(types):
             raise ValueError("List sizes are not identical.")
         self.__names = names
